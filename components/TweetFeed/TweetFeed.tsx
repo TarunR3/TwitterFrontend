@@ -37,7 +37,7 @@ function TweetFeed({ posts, handleLike }: PostsProp) {
                                         <h3 className="text-md bg-black group-hover:underline text-textgray">@{post.handle}</h3>
                                     </div>
                                 </a>
-                                <h3 className="pl-2 w-full text-md font-extralight  bg-black text-white">{post.content}</h3>
+                                <h3 className="pl-2 w-full text-md bg-black text-white">{post.content}</h3>
                                 {post.image && <img className="ml-2 max-h-[580px] max-w-[580px] rounded-lg" src={post.image} alt=""></img>}
                             </div>
                         </div>
