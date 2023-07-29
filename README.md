@@ -1,4 +1,4 @@
-Code for the frontend of a Twitter clone using Next.js, typescript, and NextAuth communicating with a Spring Boot backend\
+Code for the frontend of a Twitter clone using Next.js, typescript, and NextAuth communicating with a Spring Boot backend found here ...
 
 
 !!! The website will take a minute or two to spin up the backend due to hosting on a free platform.
