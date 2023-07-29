@@ -52,9 +52,9 @@ function AuthOverlay({ showOverlay, setOverlay }: OverlayProps) {
         }
     }
 
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
         if (password !== confirmPassword) {
-            e.preventDefault();
             setError("Passwords do not match")
             return;
         }
