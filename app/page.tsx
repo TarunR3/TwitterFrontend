@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import TweetFeed from 'components/TweetFeed/TweetFeed'
 import { ChangeEvent, SetStateAction, useState, useEffect } from "react";
 
-export default function Home({ email }) {
+export default function Home() {
   const { data: session } = useSession();
 
   const [content, setContent] = useState<string>('')
@@ -83,19 +83,3 @@ export default function Home({ email }) {
     </main>
   )
 }
-
-/*
-      <div className="w-[25%] flex flex-col items-center bg-red-500">
-        <img className="h-[10%] w-[10%]" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter Logo"></img>
-        <h1 className="text-white font-medium text-lg py-2">Home</h1>
-        <h1 className="text-white font-medium text-lg py-2">Explore</h1>
-        <h1 className="text-white font-medium text-lg py-2">Notifications</h1>
-        <h1 className="text-white font-medium text-lg py-2">Messages</h1>
-        <h1 className="text-white font-medium text-lg py-2">More</h1>
-        <button className="bg-blue-400 hover:bg-blue-500 py-2 w-[40%] text-white rounded-full px-4">
-          Tweet
-        </button>
-      </div>
-      <div className="w-[50%] bg-green-500"></div>
-      <div className="w-[25%] bg-blue-500"></div>
-      */
